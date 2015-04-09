@@ -45,7 +45,10 @@ if (__DEV__) {
 
     if (!condition) {
       var argIndex = 0;
-      var message = 'Warning: ' + format.replace(/%s/g, () => args[argIndex++]);
+      var message = 'Warning: ' +
+        format.replace(/%s/g, function() {
+          args[argIndex++];
+        });
       if (typeof console !== 'undefined') {
         console.error(message);
       }
