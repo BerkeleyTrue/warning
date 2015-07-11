@@ -1,7 +1,8 @@
 # Warning
+A mirror of Facebook's Warning
 
 [![NPM](https://nodei.co/npm/warning.png?downloads=true)](https://npmjs.org/package/warning)
-A mirror of Facebook's Warning
+
 
 ## Usage
 ```
