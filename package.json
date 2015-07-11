@@ -3,8 +3,17 @@
   "version": "1.0.2",
   "description": "A mirror of Facebook's Warning",
   "main": "warning.js",
+  "browser": "browser.js",
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
   "scripts": {
     "test": "echo 'you've been warned'"
+  },
+  "dependencies": {
+    "envify": "^3.0.0"
   },
   "repository": {
     "type": "git",
