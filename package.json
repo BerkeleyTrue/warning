@@ -6,14 +6,22 @@
   "browser": "browser.js",
   "browserify": {
     "transform": [
-      "envify"
+      "loose-envify"
     ]
   },
+  "files": [
+    "browser.js",
+    "warning.js"
+  ],
   "scripts": {
-    "test": "echo 'you've been warned'"
+    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js"
   },
   "dependencies": {
-    "envify": "^3.0.0"
+    "loose-envify": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "tap": "^1.4.0"
   },
   "repository": {
     "type": "git",
