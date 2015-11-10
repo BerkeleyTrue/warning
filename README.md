@@ -1,4 +1,4 @@
-# Warning
+# Warning [![npm version](https://badge.fury.io/js/warning.svg)](https://badge.fury.io/js/warning)
 A mirror of Facebook's Warning
 
 
