@@ -34,7 +34,7 @@
     "invariant"
   ],
   "author": "Berkeley Martinez <berkeley@r3dm.com> (http://r3dm.com)",
-  "license": "BSD-2-Clause",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/r3dm/warning/issues"
   },
