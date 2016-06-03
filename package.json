@@ -1,6 +1,6 @@
 {
   "name": "warning",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "A mirror of Facebook's Warning",
   "main": "warning.js",
   "browser": "browser.js",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/r3dm/warning.git"
+    "url": "https://github.com/BerkeleyTrue/warning.git"
   },
   "keywords": [
     "warning",
@@ -33,10 +33,10 @@
     "react",
     "invariant"
   ],
-  "author": "Berkeley Martinez <berkeley@r3dm.com> (http://r3dm.com)",
+  "author": "Berkeley Martinez <berkeley@r3dm.com> (http://www.freecodecamp.com)",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/r3dm/warning/issues"
+    "url": "https://github.com/BerkeleyTrue/warning/issues"
   },
-  "homepage": "https://github.com/r3dm/warning"
+  "homepage": "https://github.com/BerkeleyTrue/warning"
 }
