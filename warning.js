@@ -48,7 +48,7 @@ if (__DEV__) {
           return args[argIndex++];
         });
       if (typeof console !== 'undefined') {
-        console.error(message);
+        console.warn(message);
       }
       try {
         // This error was thrown as a convenience so that you can use this stack
