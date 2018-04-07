@@ -7,12 +7,12 @@ var vm = require('vm');
 var file = __dirname + '/package/' + process.env.NODE_ENV + '.js';
 
 test('node', function(t) {
-  t.plan(5);
+  t.plan(3);
   require(file)(t);
 });
 
 test('browserify', function(t) {
-  t.plan(8);
+  t.plan(6);
   var b = browserify({
     entries: file,
     standalone: 'package'
