@@ -9,14 +9,6 @@ module.exports = function(t) {
     warning(false);
   }, /requires a warning/i);
 
-  t.throws(function() {
-    warning(true, 'short');
-  }, /use a more descriptive format/i);
-
-  t.throws(function() {
-    warning(false, 'short');
-  }, /use a more descriptive format/i);
-
   var error = console.error;
 
   console.error = function(msg) {
