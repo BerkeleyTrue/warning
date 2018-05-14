@@ -3,6 +3,7 @@
 var browserify = require('browserify');
 var test = require('tap').test;
 var vm = require('vm');
+var minify = require('uglify-js').minify;
 
 var file = __dirname + '/package/' + process.env.NODE_ENV + '.js';
 
@@ -19,8 +20,9 @@ test('browserify', function(t) {
   });
   b.bundle(function(err, src) {
     t.notOk(err);
-    t.notMatch(String(src), /\bprocess\.env\.NODE_ENV\b/);
-    t.notMatch(String(src), /__DEV__/);
+    var minified = minify(src).code
+    t.notMatch(String(minified), /\bprocess\.env\.NODE_ENV\b/);
+    t.notMatch(String(minified), /__DEV__/);
     var c = {console: {}};
     vm.runInNewContext(src, c);
     c.package(t);

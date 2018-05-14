@@ -3,14 +3,12 @@
   "version": "3.0.0",
   "description": "A mirror of Facebook's Warning",
   "main": "warning.js",
-  "browser": "browser.js",
   "browserify": {
     "transform": [
       "loose-envify"
     ]
   },
   "files": [
-    "browser.js",
     "warning.js"
   ],
   "scripts": {
@@ -21,7 +19,8 @@
   },
   "devDependencies": {
     "browserify": "^11.0.1",
-    "tap": "^1.4.0"
+    "tap": "^1.4.0",
+    "uglify-js": "^3.3.25"
   },
   "repository": {
     "type": "git",
