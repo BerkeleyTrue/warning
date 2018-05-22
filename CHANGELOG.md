@@ -1,3 +1,26 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/BerkeleyTrue/warning/compare/v3.0.0...v4.0.0) (2018-05-22)
+
+
+### Bug Fixes
+
+* Remove "browser" version ([521f5f5](https://github.com/BerkeleyTrue/warning/commit/521f5f5)), closes [#18](https://github.com/BerkeleyTrue/warning/issues/18) [/github.com/facebook/fbjs/pull/86#issuecomment-285204734](https://github.com//github.com/facebook/fbjs/pull/86/issues/issuecomment-285204734)
+* Update warning to use the latest version from facebook/fbjs ([0572ddd](https://github.com/BerkeleyTrue/warning/commit/0572ddd))
+
+
+### Chores
+
+* **LICENSE:** Change from BSD modified to MIT ([5a63a1b](https://github.com/BerkeleyTrue/warning/commit/5a63a1b))
+
+
+### BREAKING CHANGES
+
+* **LICENSE:** Change License to MIT from BSD+patents
+* This changes the internal workings. A major release is
+made to ensure minimal effect on downstream users.
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
