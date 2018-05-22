@@ -2,23 +2,29 @@
   "name": "warning",
   "version": "4.0.0",
   "description": "A mirror of Facebook's Warning",
-  "main": "warning.js",
+  "main": "warning.cjs.js",
+  "module": "warning.js",
   "browserify": {
     "transform": [
       "loose-envify"
     ]
   },
   "files": [
-    "warning.js"
+    "warning.js",
+    "warning.cjs.js"
   ],
   "scripts": {
-    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js"
+    "build": "rollup --input warning.js --file warning.cjs.js --format cjs",
+    "pretest": "npm run build",
+    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "loose-envify": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^11.0.1",
+    "rollup": "^0.59.2",
     "tap": "^1.4.0",
     "uglify-js": "^3.3.25"
   },
