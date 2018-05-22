@@ -34,7 +34,7 @@
     "invariant"
   ],
   "author": "Berkeley Martinez <berkeley@r3dm.com> (http://www.freecodecamp.com)",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/BerkeleyTrue/warning/issues"
   },
