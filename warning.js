@@ -21,7 +21,7 @@ var __DEV__ = process.env.NODE_ENV !== 'production';
 var warning = function() {};
 
 if (__DEV__) {
-  function printWarning(format, args) {
+  var printWarning = function printWarning(format, args) {
     var len = arguments.length;
     args = new Array(len > 2 ? len - 2 : 0);
     for (var key = 2; key < len; key++) {
