@@ -1,6 +1,6 @@
 {
   "name": "warning",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A mirror of Facebook's Warning",
   "main": "warning.js",
   "browserify": {
