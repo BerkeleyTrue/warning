@@ -1,3 +1,13 @@
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/BerkeleyTrue/warning/compare/v4.0.0...v4.0.1) (2018-05-30)
+
+
+### Bug Fixes
+
+* add `var printWarning =` to comply with ES5 strict mode ([677dcfa](https://github.com/BerkeleyTrue/warning/commit/677dcfa)), closes [#25](https://github.com/BerkeleyTrue/warning/issues/25)
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
