@@ -1,25 +1,28 @@
-module.exports = function(t) {
+module.exports = function() {
   var warning = require('../../');
 
-  t.throws(function() {
+  expect(function() {
     warning(true);
-  }, /requires a warning/i);
+  }).toThrow(/requires a warning/i);
 
-  t.throws(function() {
+  expect(function() {
     warning(false);
-  }, /requires a warning/i);
+  }).toThrow(/requires a warning/i);
 
   var error = console.error;
 
-  console.error = function(msg) {
-    t.match(msg, /warning: warning message/i);
-  };
+  var mockFn = console.error = jest.fn();
+  var calls = console.error.mock.calls;
+
+  // should call console.error
   warning(false, 'warning message');
 
-  console.error = function(msg) {
-    t.ok(true); // should not be called
-  };
+  // should not call console.error
   warning(true, 'warning message');
+
+  expect(mockFn).toHaveBeenCalledTimes(1);
+  expect(calls[0][0])
+    .toEqual(expect.stringMatching(/warning: warning message/i));
 
   console.error = error;
 };
