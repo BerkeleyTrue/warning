@@ -12,14 +12,16 @@
     "warning.js"
   ],
   "scripts": {
-    "test": "NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js"
+    "test": "npm run test:dev && npm run test:prod",
+    "test:dev": "NODE_ENV=development jest",
+    "test:prod": "NODE_ENV=production jest"
   },
   "dependencies": {
     "loose-envify": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "^16.2.2",
-    "tap": "^12.0.1",
+    "jest": "^23.1.0",
     "uglify-js": "^3.3.25"
   },
   "repository": {

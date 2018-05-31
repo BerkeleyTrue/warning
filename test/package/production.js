@@ -1,34 +1,22 @@
-module.exports = function(t) {
+module.exports = function() {
   var warning = require('../../');
 
-  t.doesNotThrow(function() {
+  expect(function() {
     warning(true);
-  });
+  }).not.toThrow();
 
-  t.doesNotThrow(function() {
+  expect(function() {
     warning(false);
-  });
-
-  t.doesNotThrow(function() {
-    warning(true, 'short');
-  });
-
-  t.doesNotThrow(function() {
-    warning(false, 'short');
-  });
+  }).not.toThrow();
 
   var error = console.error;
 
-  console.error = function(msg) {
-    t.ok(true); // should not be called
-  };
-  warning(false, 'warning message');
-  t.ok(true); // so the test plan count matches development
+  var mock = console.error = jest.fn();
 
-  console.error = function(msg) {
-    t.ok(true); // should not be called
-  };
+  warning(false, 'warning message');
   warning(true, 'warning message');
+
+  expect(mock).not.toHaveBeenCalled();
 
   console.error = error;
 };
