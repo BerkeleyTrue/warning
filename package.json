@@ -7,6 +7,7 @@
     "test": "npm run test:dev && npm run test:prod",
     "test:dev": "NODE_ENV=development jest",
     "test:prod": "NODE_ENV=production jest",
+    "commit": "git cz",
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "dependencies": {
