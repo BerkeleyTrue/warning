@@ -19,7 +19,11 @@ highly recommended developers install [Commitizen](https://commitizen.github.io/
 it extends the git command and will make writing commit messages a breeze. This
 repository is configured with a local Commitizen configuration script.
 
-Getting Commitizen installed is usually trivial, just install it via npm. You will also
+```bash
+npm run commit
+```
+
+Getting Commitizen installed globally is usually trivial, just install it via npm. You will also
 need to install the cz-conventional-changelog adapter which this repository is configured
 to use.
 
