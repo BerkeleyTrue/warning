@@ -9,9 +9,13 @@ before_install: if [[ `npm -v` != 6* ]]; then npm install -g npm@6; fi
 
 install:
   - npm ci
+
 cache:
   directories:
   - "$HOME/.npm"
+
+notifications:
+    webhooks: https://www.travisbuddy.com/
 
 # after_success:
 #   - npm run cover:alls
