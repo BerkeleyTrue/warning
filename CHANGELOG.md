@@ -1,3 +1,14 @@
+<a name="4.0.2"></a>
+## [4.0.2](https://github.com/BerkeleyTrue/warning/compare/v4.0.1...v4.0.2) (2018-08-17)
+
+
+### Bug Fixes
+
+* **use jest instead of tap:** tap is a PITA to debug ([c4c026b](https://github.com/BerkeleyTrue/warning/commit/c4c026b))
+* remove [@provides](https://github.com/provides)Module annotation ([1d808f1](https://github.com/BerkeleyTrue/warning/commit/1d808f1))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
