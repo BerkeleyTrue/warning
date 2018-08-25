@@ -24,7 +24,7 @@ const info = {
 function isGreenkeeperBranch() {
   if (!info.branchName) {
     console.error(
-      'No branch details set, so assuming not a Greenkeeper branch',
+      'No branch details set, so assuming not a Greenkeeper branch'
     );
     return false;
   }
