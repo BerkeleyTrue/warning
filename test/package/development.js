@@ -21,8 +21,15 @@ module.exports = function() {
   warning(true, 'warning message');
 
   expect(mockFn).toHaveBeenCalledTimes(1);
-  expect(calls[0][0])
-    .toEqual(expect.stringMatching(/warning: warning message/i));
+  expect(mockFn).toHaveBeenCalledWith('Warning: warning message');
+
+  // should format message with arguments
+  warning(false, 'warning %s with one argument', 'message');
+  warning(false, 'warning %s with %s arguments', 'message', 'two');
+
+  expect(mockFn).toHaveBeenCalledTimes(3);
+  expect(mockFn).toHaveBeenCalledWith('Warning: warning message with one argument');
+  expect(mockFn).toHaveBeenCalledWith('Warning: warning message with two arguments');
 
   console.error = error;
 };
