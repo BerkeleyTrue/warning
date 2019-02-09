@@ -1,6 +1,6 @@
 {
   "name": "warning",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "A mirror of Facebook's Warning",
   "main": "warning.js",
   "scripts": {
